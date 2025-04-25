@@ -1,0 +1,33 @@
+#app {
+  display: grid;
+  grid-template-columns: 31.25% 68.75%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  background-color: var(--shape-body);
+  margin: 1.25rem;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  overflow: auto;
+}
+
+aside {
+  background-image: url(../assets/images/Background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 1.25rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.75rem;
+
+  & .logo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
