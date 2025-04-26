@@ -1,0 +1,66 @@
+.toggle-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.switch-toggle-mode {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.switch-toggle {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  width: 4rem;
+  padding-inline: 0.25rem;
+  border-radius: 2rem;
+  border: 2px solid var(--input-stroke);
+  position: relative;
+
+  & input {
+    border: 1px red solid;
+    all: unset;
+    height: 100%;
+    width: 4rem;
+    background-image: url(../../assets/icons/toggle-dark-button.svg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  & input:hover {
+    cursor: pointer;
+  }
+
+  & input:checked {
+    background-image: url(../../assets/icons/toggle-light-button.svg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+
+  &:has(input:checked) {
+    background-color: var(--brand-light);
+  }
+}
+
+#light-mode {
+  &::after {
+    content: "Escuro";
+    display: block;
+    position: absolute;
+    margin-left: 5rem;
+    margin-top: 0.25rem;
+  }
+
+  &:checked::after {
+    content: "Claro";
+    display: block;
+    position: absolute;
+    margin-left: 5rem;
+    margin-top: 0.25rem;
+  }
+}

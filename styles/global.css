@@ -62,3 +62,21 @@ h2 {
 h3 {
   font: var(--heading-sm);
 }
+
+h4 {
+  color: var(--text-body);
+  font: var(--text-sm);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  column-gap: 1.25rem;
+}

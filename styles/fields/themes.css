@@ -1,0 +1,35 @@
+.theme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.5rem;
+  background-color: var(--shape-button);
+  padding: 0.25rem;
+
+  & img {
+    width: 100%;
+  }
+
+  & input {
+    all: unset;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  & input:hover {
+    cursor: pointer;
+  }
+
+  & input:checked {
+    outline: 1px solid var(--brand-light);
+  }
+
+  label {
+    color: var(--text-heading);
+  }
+}

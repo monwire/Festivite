@@ -54,6 +54,10 @@
 
   &:has(input:checked) {
     background-color: var(--shape-hover);
+
+    label {
+      color: var(--text-heading);
+    }
   }
 }
 
@@ -71,3 +75,71 @@
 .option-2 {
   background-image: url(../../assets/icons/video.svg);
 }
+
+.color-selection label {
+  margin-bottom: 0.5rem;
+}
+
+.radio-colors {
+  display: flex;
+  justify-content: space-between;
+
+  & input {
+    border: 0.4rem solid var(--shape-button);
+    border-radius: 50%;
+    width: 0.1rem;
+  }
+
+  & input:hover {
+    cursor: pointer;
+  }
+
+  & input:checked {
+    outline: 2px solid var(--brand-light);
+  }
+}
+
+#brandlight {
+  background-color: var(--brand-light);
+}
+
+#navy {
+  background-color: var(--navy);
+}
+
+#purple {
+  background-color: var(--purple);
+}
+
+#fuschia {
+  background-color: var(--fuschia);
+}
+
+#pink {
+  background-color: var(--pink);
+}
+
+#danger {
+  background-color: var(--danger);
+}
+
+#orange {
+  background-color: var(--orange);
+}
+
+#yellow {
+  background-color: var(--yellow);
+}
+
+#lime {
+  background-color: var(--lime);
+}
+
+#green {
+  background-color: var(--green);
+}
+
+#cyan {
+  background-color: var(--cyan);
+}
+

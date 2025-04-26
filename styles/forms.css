@@ -4,6 +4,7 @@ fieldset {
   border: none;
   display: grid;
   gap: 1.5rem;
+  margin-top: 2.5rem;
 }
 
 legend {
