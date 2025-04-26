@@ -29,6 +29,86 @@
       <main>
         <div class="main-container">
           <h2>Crie seu convite</h2>
+          <form action="post" enctype="multipart/form-data">
+            <fieldset class="event-info">
+              <legend>
+                <img
+                  src="assets/icons/calendar.svg"
+                  alt="Ícone de calendário"
+                />
+                <h3>Sobre o evento</h3>
+              </legend>
+
+              <div class="input-wrapper">
+                <label for="title">Título</label>
+                <input
+                  type="text"
+                  name="title"
+                  id="title"
+                  placeholder="Nome do evento"
+                />
+              </div>
+
+              <div class="grid-1">
+                <div class="input-wrapper">
+                  <label for="start">Início</label>
+                  <input
+                    type="datetime-local"
+                    name="start"
+                    id="start"
+                    placeholder="DD/MM/AAAA, --:--"
+                  />
+                </div>
+                <div class="input-wrapper">
+                  <label for="end">Fim</label>
+                  <input
+                    type="datetime-local"
+                    name="end"
+                    id="end"
+                    placeholder="DD/MM/AAAA, --:--"
+                  />
+                </div>
+              </div>
+
+              <div class="grid-1">
+                <div class="radio-wrapper">
+                  <label>Tipo</label>
+                  <div class="radio-field">
+                    <div class="radio-inner">
+                      <div class="radio-image option-1"></div>
+                      <label for="event-type">Presencial</label>
+                      <input
+                        type="radio"
+                        name="event-type"
+                        id="inperson"
+                        value="inperson"
+                      />
+                    </div>
+                    <div class="radio-inner">
+                      <div class="radio-image option-2"></div>
+                      <label for="event-type">Online</label>
+                      <input
+                        type="radio"
+                        name="event-type"
+                        id="online"
+                        value="online"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="address">Local</label>
+                  <input
+                    type="text"
+                    name="address"
+                    placeholder="Link ou endereço"
+                    id="address"
+                  />
+                </div>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </main>
     </div>

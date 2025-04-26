@@ -5,19 +5,7 @@
   margin: 1.25rem;
   height: 100vh;
   overflow: hidden;
-}
-
-main {
-  background-color: var(--shape-body);
-  padding: 1.5rem;
   border-radius: 0.75rem;
-  overflow: auto;
-  padding-block: 5rem;
-  padding-inline: 8rem;
-
-  & h2 {
-    font: var(--heading-md);
-  }
 }
 
 aside {
@@ -35,5 +23,18 @@ aside {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+  }
+}
+
+main {
+  background-color: var(--shape-body);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  overflow: auto;
+  padding-block: 5rem;
+  padding-inline: 8rem;
+
+  & h2 {
+    margin-bottom: 2.5rem;
   }
 }

@@ -1,0 +1,28 @@
+@import url(fields/index.css);
+
+fieldset {
+  border: none;
+  display: grid;
+  gap: 1.5rem;
+}
+
+legend {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+
+  img {
+    color: var(--input-placeholder);
+  }
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font: var(--text-sm);
+}

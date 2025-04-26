@@ -49,3 +49,16 @@ h1 {
   color: var(--pink);
   font: var(--logo-text);
 }
+
+h2,
+h3 {
+  color: var(--text-heading);
+}
+
+h2 {
+  font: var(--heading-md);
+}
+
+h3 {
+  font: var(--heading-sm);
+}
