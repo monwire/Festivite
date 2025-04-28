@@ -83,6 +83,7 @@
 .radio-colors {
   display: flex;
   justify-content: space-between;
+  gap: 0.5rem;
 
   & input {
     border: 0.4rem solid var(--shape-button);
@@ -142,4 +143,3 @@
 #cyan {
   background-color: var(--cyan);
 }
-
